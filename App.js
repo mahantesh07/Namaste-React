@@ -1,17 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-/* const header=React.createElement("h1",{id:"heading"},"Hello world javascript");
-            const root=ReactDOM.createRoot(document.getElementById("root"));
-            root.render(header); */
+//React Element
+//const jsxHeading=<h1 id="heading" className="headingClassName">Namaste javascript</h1>;
 
-const parent = React.createElement("div",{id:"parent"},
-[React.createElement("div",{id:"child1"},
-[React.createElement("h1",{id:"h1"},"heading 1"),React.createElement("h2",{id:"h2"},"heading 2")]),
-React.createElement("div",{id:"child2"},
-[React.createElement("h1",{id:"h1"},"heading 1"),React.createElement("h2",{id:"h2"},"heading 2")])
-]
-);
+//Component Types 1.Class Component 2.Functional Component
 
+const Title = () => <h1>Namaste Javascript Component 1</h1>;
+const Heading = () =>(
+<div id="container">
+    <Title/>
+    <h2>Namaste Javascript Component2</h2>
+    </div>
+    )
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(<Heading/>);
