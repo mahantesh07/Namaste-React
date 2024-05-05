@@ -4,7 +4,7 @@
   "description": "\"Namaste React\"",
   "main": "App.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "del /Q .parcel-cache\\* && rmdir .parcel-cache && parcel index.html",
     "test": "jest"
   },
   "repository": {
